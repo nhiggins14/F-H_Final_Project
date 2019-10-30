@@ -1,0 +1,168 @@
+
+.topIconCont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.searchIcon {
+    background-image: url("../images/magnifying-glass.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+.shoppingBag {
+    background-image: url("../images/shoppingcart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.topIcon {
+    width: 4vw;
+    height: 5vh;
+    /* border: 5px solid blue; */
+    position: relative;
+    top: 25px;
+}
+
+
+.bannerCont {
+    margin: 2% 0 5%;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+
+}
+
+.FHbanner {
+    background-image: url("../images/fhbanner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    width: 58vw;
+    
+}
+
+
+.navItemFH {
+    display: flex;
+    justify-content: center;
+
+}
+.navSelection {
+    width: 75%;
+}
+.navShopSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.subShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.homeJumbo {
+    background-image: url("../images/bridal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shopButtonCont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.shopNowButton {
+    /* justify-content: flex-end; */
+}
+
+.carouSELL {
+    height: 40vh;
+}
+
+.cardCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+
+
+.footer {
+
+    margin: 5%;
+    border-top: 1px solid black;
+}
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+.newsletterInfoCont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.newsletterEmail {
+    border: 1px solid grey;
+    position: relative;
+    height: 50px;
+    width: 300px;
+}
+.newsSubscribeButton {
+    border: 1px solid grey;
+    color: grey;
+}
+
+.footerPt2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.footerLogo {
+    border: 3px solid black;
+    height: 15vh;
+    width: 10vw;
+}
+.footerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerInstagram {
+    background-image: url("../images/IG.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 10vh;
+    width: 10vw;
+
+}
+.footerEmail {
+    background-image: url("../images/email.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 6vh;
+    width: 10vw;
+}
+
+.footerTextBox {
+    border-left: 5px black;
+    border-right: 5px black;
+}
