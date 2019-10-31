@@ -1,39 +1,46 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 .topIconCont {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 5%;
+    margin: 2% 5% 0 0;
+    background-position: bottom;
 }
-
 .searchIcon {
-    background-image: url("../images/magnifying-glass.png");
+    background-image: url("../images/SearchIcon.png");
     background-size: contain;
     background-repeat: no-repeat;
+    height: 7vh;
    
 }
-
-.shoppingBag {
-    background-image: url("../images/shoppingcart.png");
+.heartIcon {
+    background-image: url("../images/heartIcon.png");
     background-size: contain;
     background-repeat: no-repeat;
+    height: 12vh;
 }
-
+.shoppingBag {
+    background-image: url("../images/bagIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 12vh;
+}
 .topIcon {
     width: 4vw;
-    height: 5vh;
     /* border: 5px solid blue; */
     position: relative;
-    top: 25px;
+   
 }
-
-
 .bannerCont {
-    margin: 2% 0 5%;
     display: flex;
     justify-content: center;
     height: 15vh;
-
+    position: relative;
+    margin-bottom: 4%;
+    top: -3vh;
 }
 
 .FHbanner {
@@ -43,11 +50,12 @@
     background-position: center;
     height: 20vh;
     width: 58vw;
-    
 }
 
 
-.navItemFH {
+
+/* bootstrap Nav EXXXTRASS */
+/* .navItemFH {
     display: flex;
     justify-content: center;
 
@@ -64,42 +72,295 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
+} */
 
 
-.homeJumbo {
-    background-image: url("../images/bridal.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.shopButtonCont {
+/* Nathaniel Navbar */
+.navigationFH {
+    margin-bottom: 4%;
+}    
+.navBarFH {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: ;
 }
-
-
-.shopNowButton {
-    /* justify-content: flex-end; */
-}
-
-.carouSELL {
-    height: 40vh;
-}
-
-.cardCont {
+.navbarCont {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 5% 0;
+    align-items: center;
+    width: 53%;
 }
+
+.navShop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navMainSelect {
+    font-size: 30px;
+    margin: 0 5%;
+}
+.shopPlus {
+    font-size: 1.4em;
+}
+
+.navShopSubActive {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+
+}
+.navShopSubINActive {
+    display: none;
+}
+
+
+.navSubCont {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+
+
+.navSubColumn {
+    height: 30vh;
+    margin: 0 5%;
+    text-align: left;
+    width: 10vw;
+}
+
+.navSubSub {
+    text-indent: 10%;
+    width: 23vw;
+}
+
+.navUnderline {
+    border-bottom: 1px solid black;
+}
+
+
+
+/* Grid...SCRAP??? */
+/* .heroGrid {
+display: grid;
+  margin-top: 5%;
+  min-height: 500px;
+  height: 95vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "heroImage quote"
+  "heroImage collection"
+  "heroImage collection"
+}
+.heroImage {
+    grid-area: heroImage;
+  background-image: url("../images/homeHero.png");
+  background-size: cover;
+  background-position:right;
+}
+.heroQuote {
+    grid-area: quote;
+}
+.heroCTA {
+    grid-area: collection;
+} */
+
+.heroCont {
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+}
+
+.heroRing {
+    background-image: url("../images/homeHero@2x.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100%;
+    width: 70%;
+    position: relative;
+    background-color: blue;
+    /* float: left; */
+}
+
+.heroQuote {
+    display: flex;
+    position: relative;
+    height: 30%;
+    background-color: #313B36;
+    color: white;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 30px;
+    padding: 5%;
+}
+
+
+.heroTitle {
+    display: flex;
+    position: relative;
+    height: 70%;
+    text-align: right;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    right: 15%;
+ 
+}
+.heroTitle h1 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: bold;
+    font-size: 60px;
+
+}
+
+
+.heroTitle h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.heroTitle button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    width: 65%;
+    height: 17%;
+    font-weight: 400;
+    padding: 4%;
+    box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76);
+}
+
+
+
+.buttonShop {
+    background-color:#5D0000;
+    color: white;
+}
+
+
+
+
+.heroRightSect {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+
+
+.currentCollectLine {
+    width: 29vw;
+    position: relative;
+    color: black;
+    height: 15px;
+    border-top: 3px solid black;
+}
+
+
+.button {
+
+    border-radius: 5px;
+}
+
+/* creators */
+.creators {
+    background-color:#313B36;
+    padding: 15%;
+    color:white;
+    height: 25vh;
+    text-align: center;
+
+
+}
+
+.homeCarousel {
+   
+}
+
+
+
+/* Featured Item Cards */
+
+.featuredCardRow {
+    display: flex;
+    height: 60vh;
+    justify-content: space-evenly;
+}
+
+
+.featuredCard {
+    width: 10vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* placeholder below */
+    background-image: url("../images/featuredItem.png");
+}
+
+.featuredCard1 {
+    background-image: url("../images/featuredItem.png");
+}
+
+
+
+/* Social Cards */
+
+.cardCont {
+    margin: 0 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cardHeading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialCardRow {
+    display: flex;
+    height: 60vh;
+    justify-content: space-evenly;
+}
+.socialCard {
+    width: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.socCard1 {
+    background-image: url("../images/socialCard1.png");
+ 
+}
+.socCard2 {
+    background-image: url("../images/socialCard1.png");
+ 
+}
+.socCard3 {
+    background-image: url("../images/socialCard1.png");
+
+}
+
 
 
 
 .footer {
 
-    margin: 5%;
+    /* margin: 5%; */
     border-top: 1px solid black;
 }
 
@@ -129,14 +390,25 @@
 .footerPt2 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 44vh;
     justify-content: space-evenly;
+    background-color: rgba(55,55,55,0.25);
 
 }
 
+
+.fossilFooter {
+    position: relative;
+    left: -6%;
+}
+
 .footerLogo {
-    border: 3px solid black;
-    height: 15vh;
-    width: 10vw;
+    background-image: url("../images/footerLogo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 22vh;
+    width: 18vw;
 }
 .footerContact {
     display: flex;
@@ -166,3 +438,37 @@
     border-left: 5px black;
     border-right: 5px black;
 }
+
+
+
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: white;
+    color: #023118;
+    border: 1px solid grey;
+    padding: 12px 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76); 
+    box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76);
+}
+
+
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: grey;
+  }
+  
