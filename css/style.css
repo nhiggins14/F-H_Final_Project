@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica,'Roboto', 'Open Sans', sans-serif;
 }
 
 .topIconCont {
@@ -102,7 +102,7 @@ body {
 
 .navMainSelect {
     font-size: 30px;
-    margin: 0 5%;
+
 }
 .shopPlus {
     font-size: 1.4em;
@@ -117,28 +117,21 @@ body {
 .navShopSubINActive {
     display: none;
 }
-
-
 .navSubCont {
     display: flex;
     justify-content: center;
     margin: 2%;
 }
-
-
-
 .navSubColumn {
     height: 30vh;
     margin: 0 5%;
     text-align: left;
     width: 10vw;
 }
-
 .navSubSub {
     text-indent: 10%;
     width: 23vw;
 }
-
 .navUnderline {
     border-bottom: 1px solid black;
 }
@@ -178,7 +171,7 @@ display: grid;
 }
 
 .heroRing {
-    background-image: url("../images/homeHero@2x.png");
+    background-image: url("../images/ringHERO.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -280,14 +273,52 @@ display: grid;
 
 /* creators */
 .creators {
-    background-color:#313B36;
-    padding: 15%;
-    color:white;
-    height: 25vh;
+    background-color: #313B36;
+    color: white;
+    display: flex;
+    height: auto;
+    min-height: 50vh;
     text-align: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
 
+.creatorTextCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1% 7%;
+}
+
+.creatorTextCont p {
+    color: white;
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-size: 36px;
+    display: inherit;
+}
+.creatorOpenApost {
+    
+}
+.creatorClosedApost {
 
 }
+
+.creatorLinkText {
+    position: absolute;
+    bottom: 11%;
+    right: 8%;
+    border-bottom: 1px solid #AF9574;
+    padding-bottom: 6px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #AF9574;
+}
+}
+
 
 .homeCarousel {
    
@@ -296,16 +327,32 @@ display: grid;
 
 
 /* Featured Item Cards */
-
+.featureCardCont {
+    margin: 10% 0;
+    font-family: 'Roboto';
+}
 .featuredCardRow {
     display: flex;
     height: 60vh;
     justify-content: space-evenly;
+    padding: 0px 5%;
+    margin: 1% 0;
 }
 
+.featuredCardCont {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardItemTextCont {
+    padding: 3% 0;
+
+
+}
 
 .featuredCard {
-    width: 10vw;
+    width: auto;
+    height: 50vh;
     background-size: contain;
     background-repeat: no-repeat;
     /* placeholder below */
@@ -314,6 +361,18 @@ display: grid;
 
 .featuredCard1 {
     background-image: url("../images/featuredItem.png");
+}
+
+.cardLinkCont {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 10vw;
+}
+
+.cardLinkUnderline {
+    border-bottom: 1px solid black;
+    margin-right: 10%;
 }
 
 
@@ -330,6 +389,26 @@ display: grid;
 .cardHeading {
     display: flex;
     justify-content: space-between;
+    padding: 1% 7%;
+    font-family: 'Roboto';
+    font-size: 24px;
+    align-items: center;
+}
+
+.followUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50vw;
+}
+.instagramLogo {
+    background-image: url("../images/InstagramLogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1.5em;
+    margin-right: 2%;
+
 }
 
 .socialCardRow {
@@ -355,13 +434,72 @@ display: grid;
 
 }
 
+/* custom made */
+.customMade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
 
+.customTitle {
+    border: 1px solid black;
+    height: 10vh;
+    margin-bottom: 3%;
+}
+
+.customDropDown {
+    border: 2px solid black;
+    height: 10vh;
+    width: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.back2Top {
+    position: relative;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.backAlign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.back2TopButton {
+    height: 5vh;
+    height: auto;
+    width: auto;
+}
+
+
+
+
+.back2TopText {
+    text-align: center;
+}
 
 
 .footer {
 
-    /* margin: 5%; */
+    margin-top: 8%;
+
+}
+
+.borderTopLine {
     border-top: 1px solid black;
+    position: relative;
+    left: 10%;
+    width: 80%;
 }
 
 .newsletter {
@@ -371,11 +509,25 @@ display: grid;
     align-items: center;
     padding: 5%;
 }
+
+.newsletter h3 {
+    font-family: 'Old Standard TT', serif;
+    margin-bottom: 3%;
+    font-size: 50px;
+}
 .newsletterInfoCont {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    width: 60vw;
 }
+
+.alignNewsForm {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .newsletterEmail {
     border: 1px solid grey;
     position: relative;
@@ -386,6 +538,39 @@ display: grid;
     border: 1px solid grey;
     color: grey;
 }
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid black; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-right: 12%;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: white;
+    color: #023118;
+    border: 1px solid grey;
+    padding: 12px 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76); 
+    box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76);
+    width: 35vw;
+}
+
+
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: grey;
+  }
 
 .footerPt2 {
     display: flex;
@@ -400,7 +585,11 @@ display: grid;
 
 .fossilFooter {
     position: relative;
-    left: -6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 1%;
 }
 
 .footerLogo {
@@ -439,36 +628,13 @@ display: grid;
     border-right: 5px black;
 }
 
+.footerVertLine {
+    border-left: 3px solid black;
+    height: 65%;
+    margin-left: -3px;
 
-
-
- /* Style inputs with type="text", select elements and textareas */
- input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: white;
-    color: #023118;
-    border: 1px solid grey;
-    padding: 12px 20px;
-    cursor: pointer;
-    -webkit-box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76); 
-    box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76);
 }
 
 
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: grey;
-  }
+ 
   
