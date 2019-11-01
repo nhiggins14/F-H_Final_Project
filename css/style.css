@@ -5,33 +5,43 @@ body {
 .topIconCont {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin: 2% 5% 0 0;
+    align-items: flex-end;
+    margin: 2% 3% 0 0;
     background-position: bottom;
+    height: 10vh;
+    
+}
+.topIconExtraWrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 12vw;
 }
 .searchIcon {
     background-image: url("../images/SearchIcon.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 7vh;
+    height: 43px;
    
 }
 .heartIcon {
     background-image: url("../images/heartIcon.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 12vh;
+    height: 55px;
+    margin-right: 1%;
 }
 .shoppingBag {
-    background-image: url("../images/bagIcon.png");
+    background-image: url("../images/shopBagIconFinal.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 12vh;
-}
+    height: 48px;
+}    
 .topIcon {
     width: 4vw;
     /* border: 5px solid blue; */
     position: relative;
+ 
    
 }
 .bannerCont {
@@ -39,41 +49,16 @@ body {
     justify-content: center;
     height: 15vh;
     position: relative;
-    margin-bottom: 4%;
-    top: -3vh;
+    margin-bottom: 5%;
 }
-
 .FHbanner {
-    background-image: url("../images/fhbanner.jpg");
+    background-image: url("../images/F&HBANNERfinal.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: 20vh;
     width: 58vw;
 }
-
-
-
-/* bootstrap Nav EXXXTRASS */
-/* .navItemFH {
-    display: flex;
-    justify-content: center;
-
-}
-.navSelection {
-    width: 75%;
-}
-.navShopSub {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.subShop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-} */
-
 
 /* Nathaniel Navbar */
 .navigationFH {
@@ -84,7 +69,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-family: ;
+    font-family: 'Roboto';
+    font-weight: normal;
 }
 .navbarCont {
     display: flex;
@@ -92,30 +78,42 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width: 53%;
+    position: relative;
+    left: 1.2%;
 }
 
 .navShop {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    min-width: 125px;
 }
-
 .navMainSelect {
     font-size: 30px;
-
 }
 .shopPlus {
     font-size: 1.4em;
 }
+.navShopSubINActive {
+    display: none;
+}
 
-.navShopSubActive {
+.navShopSubINActive:hover {
     display: flex;
     height: auto;
     flex-direction: column;
-
 }
-.navShopSubINActive {
+
+.menu .menu {
     display: none;
+}
+
+.menu .menuitem:hover .menu {
+    display: block;
+    float: left;
+    // likely need to set top & left
 }
 .navSubCont {
     display: flex;
@@ -133,10 +131,8 @@ body {
     width: 23vw;
 }
 .navUnderline {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
 }
-
-
 
 /* Grid...SCRAP??? */
 /* .heroGrid {
@@ -168,39 +164,46 @@ display: grid;
     display: flex;
     flex-direction: row;
     height: 95vh;
+    min-height: 700px;
 }
-
 .heroRing {
     background-image: url("../images/ringHERO.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top;
     height: 100%;
-    width: 70%;
+    width: 66%;
     position: relative;
     background-color: blue;
-    /* float: left; */
 }
-
+.heroRightSect {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+}
 .heroQuote {
     display: flex;
     position: relative;
-    height: 30%;
+    height: 35%;
     background-color: #313B36;
     color: white;
     font-style: italic;
     justify-content: center;
     align-items: center;
     font-family: 'Old Standard TT', serif;
+    font-weight: lighter;
     font-size: 30px;
-    padding: 5%;
+    padding: 10%;
 }
+.openApostSmall {
+    height: 4.2em;
+    margin-right: 8px;
 
-
+}
 .heroTitle {
     display: flex;
     position: relative;
-    height: 70%;
+    height: 65%;
     text-align: right;
 }
 
@@ -217,13 +220,14 @@ display: grid;
     font-family: 'Old Standard TT', serif;
     font-weight: bold;
     font-size: 60px;
-
+    color: #373737;
+    margin-bottom: -1%;
 }
-
 
 .heroTitle h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    color: #373737;
 }
 
 .heroTitle button {
@@ -232,42 +236,28 @@ display: grid;
     align-items: center;
     font-family: 'Muli', sans-serif;
     font-size: 24px;
-    width: 65%;
-    height: 17%;
-    font-weight: 400;
-    padding: 4%;
-    box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76);
+    width: auto;
+    height: auto;
+    min-width: 260px;
+    min-height: 60px;
+    font-weight: 500;
+    padding: 3% 5%;
+    box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.76);
+    border: none;
+
 }
-
-
-
 .buttonShop {
     background-color:#5D0000;
     color: white;
 }
-
-
-
-
-.heroRightSect {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-}
-
-
-
 .currentCollectLine {
-    width: 29vw;
+    width: 440px;
     position: relative;
     color: black;
     height: 15px;
-    border-top: 3px solid black;
+    border-top: 3px solid #373737;
 }
-
-
 .button {
-
     border-radius: 5px;
 }
 
@@ -277,7 +267,7 @@ display: grid;
     color: white;
     display: flex;
     height: auto;
-    min-height: 50vh;
+    min-height: 350px;
     text-align: center;
     justify-content: center;
     position: relative;
@@ -286,7 +276,7 @@ display: grid;
 
 .creatorTextCont {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -299,11 +289,19 @@ display: grid;
     font-style: italic;
     font-size: 36px;
     display: inherit;
+    text-align: left;
+
 }
 .creatorOpenApost {
-    
+    height: 150px;
+    margin-right: 1%;
+   
 }
+
 .creatorClosedApost {
+    height: 150px;
+    margin-top: -5%;
+    margin-right: 4%;
 
 }
 
@@ -311,24 +309,72 @@ display: grid;
     position: absolute;
     bottom: 11%;
     right: 8%;
-    border-bottom: 1px solid #AF9574;
     padding-bottom: 6px;
     font-family: 'Roboto';
     font-size: 24px;
     color: #AF9574;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 335px;
 }
+.meetCreators {
+    border-bottom: 1px solid #AF9574;
 }
-
+.creatorChevron {
+    height: 30px;
+}
 
 .homeCarousel {
    
 }
+.carouselTextCont {
+z-index: 500;
+    position: absolute;
+    top: 12%;
+}
+
+.classicButton {
+    background-color: #313B36;
+    border: none;
+    font-family: 'Muli', sans-serif;
+}
+/* .classicLine {
+    position: relative;
+    color: black;
+    height: 15px;
+    border-top: 3px solid black;
+} */
+
+.classicHero {
+    justify-content: center;
+    align-items: flex-start;
+    left: 25%;
+}
+
+
+.caroArrow {
+    background-size: contain;
+    position: relative;
+    height: 72px;
+    width: 95px;
+    top: 15%;
+}
+
+.caroselLeftArrow {
+    background-image: url("../images/carouselLeftArrow.png"); 
+}
+
+.caroselRightArrow {
+    background-image: url("../images/carouselRightArrow.png");
+}
+
 
 
 
 /* Featured Item Cards */
 .featureCardCont {
-    margin: 10% 0;
+    margin: 8% 0 15px;
     font-family: 'Roboto';
 }
 .featuredCardRow {
@@ -336,32 +382,53 @@ display: grid;
     height: 60vh;
     justify-content: space-evenly;
     padding: 0px 5%;
-    margin: 1% 0;
+    /* margin: 1% 0 10% 0; */
 }
 
 .featuredCardCont {
     display: flex;
     flex-direction: column;
+    /* height: 65vh;
+    width: 20vw; */
 }
 
 .cardItemTextCont {
-    padding: 3% 0;
+    padding: 10% 0;
+}
+.cardItemTextCont h3 {
+    font-size: 24px;
+}
 
-
+.cardItemTextCont h4 {
+    font-size: 18px;
 }
 
 .featuredCard {
     width: auto;
-    height: 50vh;
-    background-size: contain;
+    height: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
-    /* placeholder below */
-    background-image: url("../images/featuredItem.png");
+    background-position: left;
+    min-height: 298.5px;
+    min-width: 279.5px;
 }
 
 .featuredCard1 {
     background-image: url("../images/featuredItem.png");
 }
+.featuredCard2 {
+    background-image: url("../images/featuredItem.png");
+}
+.featuredCard3 {
+    background-image: url("../images/featuredItem.png");
+}
+.featuredCard4 {
+    background-image: url("../images/featuredItem.png");
+}
+
+
+
+
 
 .cardLinkCont {
     display: flex;
@@ -378,22 +445,22 @@ display: grid;
 
 
 /* Social Cards */
+.cardHeading {
+      display: flex;
+    justify-content: space-between;
+    /* padding: 1% 6%; */
+    font-family: 'Roboto';
+    font-size: 24px;
+    align-items: center;
+    margin: 0 7% 3%;
 
-.cardCont {
-    margin: 0 15%;
+}
+.socialCardCont {
+    margin: 100px 0% 200px;
     display: flex;
     flex-direction: column;
 }
 
-
-.cardHeading {
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 7%;
-    font-family: 'Roboto';
-    font-size: 24px;
-    align-items: center;
-}
 
 .followUs {
     display: flex;
@@ -413,24 +480,38 @@ display: grid;
 
 .socialCardRow {
     display: flex;
-    height: 60vh;
+    height: auto;
     justify-content: space-evenly;
 }
-.socialCard {
-    width: 25vw;
-    background-size: contain;
+.socialCardRL {
+    width: 20vw;
+    background-size: cover;
     background-repeat: no-repeat;
+    min-height: 545px;
+    min-width: 385px;
 }
+
+
+
+.socialCardCenter {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    min-height: 545px;
+    min-width: 462px;
+}
+
+
 .socCard1 {
-    background-image: url("../images/socialCard1.png");
+    background-image: url("../images/socialLeftCard.png");
  
 }
 .socCard2 {
-    background-image: url("../images/socialCard1.png");
+    background-image: url("../images/socialCardCenter.png");
  
 }
 .socCard3 {
-    background-image: url("../images/socialCard1.png");
+    background-image: url("../images/socialRightCard.png");
 
 }
 
@@ -450,13 +531,30 @@ display: grid;
 }
 
 .customDropDown {
-    border: 2px solid black;
-    height: 10vh;
+    border: 1px solid black;
+    height: auto;
     width: auto;
+    min-width: 830px;
     padding: 15px;
     display: flex;
     align-items: center;
     font-size: 24px;
+    justify-content: center;
+}
+
+.didintFind {
+    font-size: 35px;
+    font-family: 'Muli', sans-serif;
+    position: relative;
+    font-weight: 300;
+}
+
+.customDropButton {
+    font-size: 42px;
+    font-family: 'Muli', sans-serif;
+    position: relative;
+    left: 2%;
+    font-weight: 600;
 }
 
 .back2Top {
@@ -467,31 +565,46 @@ display: grid;
     width: 95%;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 150px;
+    cursor: pointer;
 }
 
 .backAlign {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 125px;
 }
 .back2TopButton {
     height: 5vh;
     height: auto;
     width: auto;
+    position: relative;
+    bottom: 12%;
 }
-
-
+.back2Link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
 
 
 .back2TopText {
     text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: 'Roboto';
+    text-decoration: underline;
 }
 
 
 .footer {
 
-    margin-top: 8%;
+    margin-top: 5%;
 
 }
 
@@ -512,7 +625,7 @@ display: grid;
 
 .newsletter h3 {
     font-family: 'Old Standard TT', serif;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     font-size: 50px;
 }
 .newsletterInfoCont {
@@ -525,6 +638,7 @@ display: grid;
 .alignNewsForm {
     display: flex;
     flex-direction: row;
+    height: 60px;
 
 }
 
@@ -550,19 +664,26 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-right: 12%;
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+}
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: white;
     color: #023118;
-    border: 1px solid grey;
+    border: 1px solid black;
     padding: 12px 20px;
     cursor: pointer;
     -webkit-box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76); 
     box-shadow: 1px 2px 8px -4px rgba(0,0,0,0.76);
     width: 35vw;
+    font-family: 'Muli', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 
@@ -578,7 +699,7 @@ input[type=text], select, textarea {
     align-items: center;
     height: 44vh;
     justify-content: space-evenly;
-    background-color: rgba(55,55,55,0.25);
+    /* background-color: rgba(55,55,55,0.25); */
 
 }
 
@@ -590,13 +711,14 @@ input[type=text], select, textarea {
     justify-content: center;
     align-items: center;
     right: 1%;
+    bottom: 7%;
 }
 
 .footerLogo {
-    background-image: url("../images/footerLogo.png");
+    background-image: url("../images/footerLogoFINAL.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 22vh;
+    height: 200px;
     width: 18vw;
 }
 .footerContact {
@@ -605,23 +727,25 @@ input[type=text], select, textarea {
     align-items: center;
 }
 
+.footer2Text {
+    position: relative;
+    right: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    height: 200px;
+}
+
 .footerInstagram {
-    background-image: url("../images/IG.png");
-    background-size: contain;
+    height: 55px;
+    width: 55px;
+    background-image: url(../images/InstagramLogo.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 10vh;
-    width: 10vw;
 
 }
-.footerEmail {
-    background-image: url("../images/email.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 6vh;
-    width: 10vw;
-}
+
 
 .footerTextBox {
     border-left: 5px black;
@@ -635,6 +759,4 @@ input[type=text], select, textarea {
 
 }
 
-
- 
   

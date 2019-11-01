@@ -20,62 +20,18 @@
 
 
     <!-- top-right Icons -->
-    <div class="topIconCont">
+    <div class="topIconCont" id="top">
+        <div class="topIconExtraWrap">
         <div class="topIcon searchIcon"></div>
         <div class="topIcon heartIcon"></div>
         <div class="topIcon shoppingBag"></div>
-
+    </div>
     </div>
     <!-- logo -->
     <div class="bannerCont">
         <div class="FHbanner"></div>
     </div>
 
-
-    <!-- Bootstrap Nav -->
-    <!-- <ul class="nav nav-pills mb-3 navItemFH" id="pills-tab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-                aria-controls="pills-home" aria-selected="true">SHOP ALL</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-                aria-controls="pills-profile" aria-selected="false">FIND US</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-                aria-controls="pills-contact" aria-selected="false">ABOUT</a>
-        </li>
-    </ul>
-    <div class="tab-content navItemFH" id="pills-tabContent">
-        <div class="tab-pane fade show active navSelection" id="pills-home" role="tabpanel"
-            aria-labelledby="pills-home-tab">
-            <div class="navShopSub">
-                <h2>Shop All</h2>
-                <div class="subShop">
-                    <h2>Collections</h2>
-                    <ul>
-                        <li>Summer 2019</li>
-                        <li>Spring</li>
-                        <li>Gold</li>
-                        <li>Bridal</li>
-                    </ul>
-                </div>
-                <div class="subShop">
-                    <h2>Categories</h2>
-                    <ul>
-                        <li>Bracelets</li>
-                        <li>Earrings</li>
-                        <li>Necklaces</li>
-                        <li>Rings</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"></div>
-    </div> -->
 
     <!-- Nate Dog Nav -->
 
@@ -84,12 +40,12 @@
             <div class="navbarCont">
                 <div class="navUnderline">
                     <div class="navShop navMainSelect">
-                        <h1 class="navMainSelect">Shop</h1>
+                        <h1 class="navMainSelect">SHOP</h1>
                         <h1 class="shopPlus">+</h1>
                     </div>
                 </div>
-                <h1 class="navMainSelect">Find Us</h1>
-                <h1 class="navMainSelect">About</h1>
+                <h1 class="navMainSelect">FIND US</h1>
+                <h1 class="navMainSelect">ABOUT</h1>
             </div>
         </section>
         <section class="navShopSubINActive">
@@ -132,32 +88,6 @@
         </section>
     </nav>
 
-
-    <!-- jumotron -->
-
-    <!-- Grid...SCRAP??? -->
-    <!-- <section class="heroGrid">
-
-<div class="heroImage">
-
-</div>
-
-<div class="heroQuote">
-    <span class="quotation">"</span>Bold Jewelry to your everyday look
-</div>
-
-<div class="heroCTA">
-<h1>Classic</h1>
-<br>
-<h2>Collection</h2>
-<button>Start Shopping</button>
-
-</div>
-
-
-</section> -->
-
-
     <!-- jumbo try 2 -->
 
     <section class="heroCont">
@@ -166,7 +96,8 @@
 
         <div class="heroRightSect">
             <div class="heroQuote">
-                <img src="images/openApost.png">
+                <img src="images/openApost.png" class="openApostSmall">
+
 
                 Bold Jewelry for your everyday look
             </div>
@@ -188,18 +119,18 @@
     <section class="creators">
 
         <div class="creatorTextCont">
-            <p>
                 <img src="images/openApost.png" class="creatorOpenApost">
+            <p>
                 Each piece of jewelry is handcrafted by Jenny and Karen. Add a bold statement to your everyday look with
-                one of Fossil & Hide designs.
-                <img src="images/closedApost.png" class="creatorClosedApost">
+                one of Fossil & Hide designs.     
             </p>
+            <img src="images/closedApost.png" class="creatorClosedApost">
 
 
 
             <div class="creatorLinkText">
-                Meet the Creators of F&H
-                <img src="images/goldChevron.png">
+              <div class="meetCreators"> Meet the Creators of F&H</div> 
+                <img src="images/goldChevron.png" class="creatorChevron">
             </div>
 
         </div>
@@ -207,9 +138,27 @@
         </div>
     </section>
 
+
+
+
+    <!-- carousel -->
     <section>
 
+            
         <div id="carouselExampleIndicators homeCarousel" class="carousel slide" data-ride="carousel">
+           
+                <div class="carouselTextCont">
+
+                        <div class="heroTitle">
+                                       <div class="heroText classicHero">
+                                           <h1>GOLD</h1>
+                                           <h2>COLLECTION</h2>
+                                           <hr class="currentCollectLine classicLine">
+                                           <button class="button buttonShop classicButton">SHOP COLLECTION</button>
+                                       </div>
+                                   </div>
+                           </div>
+           
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -227,16 +176,18 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon caroselLeftArrow caroArrow" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon caroselRightArrow caroArrow" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
 
     </section>
+
+
 
     <!-- Featured Item Cards -->
 
@@ -309,7 +260,7 @@
     </section>
 
     <!-- Social Cards -->
-    <section class="cardCont">
+    <section class="socialCardCont">
 
         <div class="cardHeading">
 
@@ -332,9 +283,9 @@
 
 
         <div class="socialCardRow">
-            <div class="socialCard socCard1"></div>
-            <div class="socialCard socCard2"></div>
-            <div class="socialCard socCard3"></div>
+            <div class="socialCardRL socCard1"></div>
+            <div class="socialCardCenter socCard2"></div>
+            <div class="socialCardRL socCard3"></div>
 
         </div>
 
@@ -343,6 +294,7 @@
 
     </section>
 
+
     <!-- custom made seciont -->
 
     <section class="customMade">
@@ -350,7 +302,9 @@
             Placeholder text
         </div>
         <div class="customDropDown">
-            DIDN'T FIND WHAT YOU'RE LOOKING FOR? <span class="customDropButton">+</span>
+          <div class="didintFind">DIDN'T FIND WHAT YOU'RE LOOKING FOR?</div>
+          <div class="customDropButton">+</div>
+         
         </div>
 
     </section>
@@ -360,8 +314,13 @@
     <div class="back2Top">
 
 <div class="backAlign">  
-        <img src="images/back2Top.png" class="back2TopButton">
-        <h4 class="back2TopText">Back To Top</h4>
+       
+        <a href="#top" class="back2Link">
+                <h4 class="back2TopText">Back to top</h4>
+
+                <img src="images/back2Top.png" class="back2TopButton">
+        </a>
+        
     </div>   
     </div>
 
@@ -395,24 +354,24 @@
                 <div class="footerLogo"></div>
 
 <div class="footerFH">
-    2019 Fossil & Hide
+
 </div>
-
-
             </div>
-            <h4>Shop</h4>
+
+            <div class="footer2Text">
+            <h4>SHOP</h4>
 
             <div class="footerVertLine"></div>
 
-            <h4 class="footerTextBox">Find Us</h4>
+            <h4 class="footerTextBox">FIND US</h4>
 
             <div class="footerVertLine"></div>
 
-            <h4>About</h4>
-
+            <h4>ABOUT</h4>
+        </div>
             <div class="footerContact">
                 <div class="footerInstagram">
-                        <img src="images/InstagramLogo.png">
+                        <!-- <img src="images/InstagramLogo.png"> -->
 
                 </div>
                
@@ -431,15 +390,10 @@
 
 
     <!-- Bootstrap JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
     <script src="js/index.js"></script>
