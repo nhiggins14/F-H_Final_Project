@@ -82,7 +82,7 @@ body {
     left: 1.2%;
 }
 
-.navShop {
+#navShop {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -100,10 +100,12 @@ body {
     display: none;
 }
 
-.navShopSubINActive:hover {
+.navShopSubActive {
     display: flex;
-    height: auto;
-    flex-direction: column;
+}
+
+.navShopSubINActive:hover {
+    background-color:green;
 }
 
 .menu .menu {
@@ -115,10 +117,21 @@ body {
     float: left;
     // likely need to set top & left
 }
+.navLineWrapper {
+    display: flex;
+    justify-content: center;
+}
+.navLineBreak {
+    border-top: 2px solid black;
+    width: 60%;
+
+}
 .navSubCont {
     display: flex;
     justify-content: center;
     margin: 2%;
+    font-family: 'Roboto';
+  
 }
 .navSubColumn {
     height: 30vh;
@@ -126,13 +139,25 @@ body {
     text-align: left;
     width: 10vw;
 }
+
+.navSubColumn h2 {
+    font-size: 24px;
+}
 .navSubSub {
     text-indent: 10%;
     width: 23vw;
+  
 }
-.navUnderline {
-    /* border-bottom: 1px solid black; */
+
+.navSubSub h3 {
+    font-size: 20px;
 }
+.navUnderline:hover {
+    border-bottom: 1px solid black;
+}
+
+
+
 
 /* Grid...SCRAP??? */
 /* .heroGrid {
@@ -522,38 +547,80 @@ z-index: 500;
     justify-content: center;
     align-items: center;
     margin: 5% 0;
+    background-color: #AF9574;
+    height: 75vh;
 }
 
-.customTitle {
-    border: 1px solid black;
-    height: 10vh;
-    margin-bottom: 3%;
+.customTitleWrapper {
+    display: flex;
+    width: 60%;
+    margin-top: -5%;
 }
+.customTitle {
+    margin: 5% 0% 0;
+    height: 10vh;
+    font-family: 'Old Standard TT';
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.customDescWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 60%;
+    height: 23vh;
+    margin-bottom: 4%;
+}
+.customDescript {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: white;
+    
+}
+
+.customLineBreak {
+    border-top: 3px solid black;
+    width: 70%;
+}
+
+.customLineWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}    
 
 .customDropDown {
     border: 1px solid black;
     height: auto;
-    width: auto;
+    width: 70%;
     min-width: 830px;
+    min-height: 77px;
     padding: 15px;
     display: flex;
     align-items: center;
     font-size: 24px;
     justify-content: center;
+    color: #023118;
+    background-color: white;
+    -webkit-box-shadow: 6px 6px 15px 6px rgba(0,0,0,0.24); 
+    box-shadow: 6px 6px 15px 6px rgba(0,0,0,0.24);
 }
 
 .didintFind {
-    font-size: 35px;
+    font-size: 24px;
     font-family: 'Muli', sans-serif;
     position: relative;
     font-weight: 300;
+
 }
 
 .customDropButton {
     font-size: 42px;
     font-family: 'Muli', sans-serif;
     position: relative;
-    left: 2%;
+    left: 17%;
     font-weight: 600;
 }
 
@@ -718,7 +785,7 @@ input[type=text], select, textarea {
     background-image: url("../images/footerLogoFINAL.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 220px;
     width: 18vw;
 }
 .footerContact {
